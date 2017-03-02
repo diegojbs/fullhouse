@@ -1,0 +1,68 @@
+.logo {
+  max-width: 200px;
+  max-height: 200px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 25px;
+  padding-top: 5px; }
+
+.encabezado {
+  padding: 5px !important; }
+
+.content-tele {
+  padding: 10px; }
+
+.row-social {
+  margin-bottom: 10px; }
+
+.main_header {
+  background-image: url("http://fullhouseprefabricados.com/recursos/img/new-home-1682323_1280.jpg") !important;
+  /*background-color: #cccccc;*/ }
+
+.active {
+  background-color: #ff9933 !important; }
+
+html, body {
+  /*background-color: #694b02;*/ }
+
+.naranja {
+  background-color: orange !important; }
+
+.naranja a {
+  color: black; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.social {
+  background-color: #ff9933;
+  padding: 10px;
+  border-radius: 10px;
+  color: black; }
+
+.main_header {
+  background-color: rgba(153, 153, 153, 0.4); }
+
+.encabezado {
+  background-color: rgba(153, 153, 153, 0.6);
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.imagen-custom {
+  border: rgba(153, 153, 153, 0.4) 5px solid;
+  border-radius: 5px 5px; }
+
+.ficha_tecnica {
+  background-color: rgba(153, 153, 153, 0.4);
+  height: 100%;
+  border-radius: 50px 0px 0px 0px;
+  padding: 30px; }
+
+.proyectos {
+  /*background-color: #694b02;*/ }
+
+.container {
+  background-color: white; }
+
+/*# sourceMappingURL=app.css.map */
