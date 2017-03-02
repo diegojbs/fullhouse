@@ -19,7 +19,7 @@ class Contacto extends Model
             $msj->subject('Solicitud de informacion');
             $msj->from($datos->email, $datos->nombre);
             $msj->replyTo($datos->email, $datos->nombre);
-            $msj->to('contacto1.diego@gmail.com');
+            $msj->to('fullhouseprefabricados@gmail.com');
         });
     }
 }
