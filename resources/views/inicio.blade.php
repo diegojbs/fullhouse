@@ -156,6 +156,14 @@
 						<p>
 							{{$proyecto->contenido}}
 						</p>
+						<h4>Detalles de este proyecto.</h4>
+						<p>
+							@foreach($detalles as $detalle)
+								@if($detalle->proyecto_id == $proyecto->id)
+									<i class="fa fa-check fa-2x" aria-hidden="true"></i>{{$detalle->descripcion}}<br>
+								@endif
+							@endforeach
+						</p>
 				</div>
 			</div>
 		</div>
