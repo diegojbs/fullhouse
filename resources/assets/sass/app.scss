@@ -10,6 +10,10 @@
 
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 .encabezado{
 	padding: 5px !important;
 }
@@ -58,6 +62,24 @@ html, body{
 	color: black;
 }
 
+.ico-whatsapp{
+	background-color: #00a859;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+}
+
+.ico-facebook{
+	background-color: #3b5998;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+}
+
+.ico-ok{
+	color: orange;
+}
+
 .main_header{
 	background-color: rgba(153,153,153,0.4);
 }
@@ -70,8 +92,9 @@ html, body{
 }
 
 .imagen-custom{
-	border: rgba(153,153,153,0.4) 5px solid;
-	border-radius: 5px 5px;
+	border: rgba(153,153,153,0.4) 0px solid;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 2px 10px #999;
 }
 
 .ficha_tecnica{

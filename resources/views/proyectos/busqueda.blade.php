@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Full House Prefabricados</title>
+    <title>{{$proyecto->titulo}}</title>
 
     <!-- Bootstrap -->
     <link href="http://fullhouseprefabricados.com/recursos/css/bootstrap.min.css" rel="stylesheet">
@@ -13,13 +13,7 @@
     <link rel="stylesheet" type="text/css" href="http://fullhouseprefabricados.com/recursos/css/bootstrap-social.css">
     <link  href="http://fullhouseprefabricados.com/recursos/fancybox/fancybox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-	<!-- <link rel="stylesheet" href="http://fullhouseprefabricados.com/recursos/css/main.css"> -->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/ffee898d61.js"></script>
     <script src="http://fullhouseprefabricados.com/recursos/fancybox/fancybox.js"></script>
@@ -144,8 +138,9 @@
 	<!-- lista de modelos -->
 	<div class="container proyectos">
 		
-		@foreach($proyectos as $proyecto)
+		
 		<div class="row">
+			
 			<div class="col-xs-12 col-sm-6">
 				<div class="ficha_tecnica">
 					<h3>{{$proyecto->titulo}}</h3>
@@ -169,6 +164,9 @@
 						       <i class="fa fa-facebook-official fa-2x ico-facebook"></i>
 						    </a>
 						</p>
+						<p>
+							<span class="h4"><a href="{{url('/')}}">Ver más modelos</a></span>
+						</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
@@ -177,13 +175,13 @@
 			</div>
 		</div>
 		<hr>
-		@endforeach
 		
-		<div class="text-center"> <span class="h3">Ver más modelos de casas: </span></div>
-		<div class="text-center">{{ $proyectos->links() }}</div>
+		
+		
 		
 
 	<!-- fin lista de modelos -->
+
 	<!-- pie de pagina -->
 	<div class="container-fluid well">
 		<div class="col xs-12 col-sm-4 text-right">

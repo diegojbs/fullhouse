@@ -112,7 +112,7 @@
 	    		</div>
 	    		<div class="col-xs-12 col-sm-6 text-right">
 	    			<span class="h3 text-center">Redes sociales </span> 
-	    			<a href=""><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
+	    			<a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
 					<a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
 					<a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
 	    			

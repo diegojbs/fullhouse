@@ -22,6 +22,8 @@ Route::get('inicio', 'MainController@index');
 
 Route::resource('mail', 'MailController');
 
+Route::resource('search', 'ProyectoController@show');
+
 Route::resource('/gracias', 'ContactoController'
 	// , 
 	// ['only' => ['store', 'destroy']
