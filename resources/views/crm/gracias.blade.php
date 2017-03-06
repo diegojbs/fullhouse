@@ -90,7 +90,7 @@
 	    		</div>
 	    		<div class="col-xs-12 col-sm-6">
 	    			
-	    			<h1>Gracias <strong>Diego.</strong></h1>
+	    			<h1>Gracias <strong>{{$datos->nombre}}.</strong></h1>
 	    			<div>
 	    				<h2>Hemos recibido sus datos, le contactaremos a su correo electrónico o a su teléfono registrado.</h2>
 
