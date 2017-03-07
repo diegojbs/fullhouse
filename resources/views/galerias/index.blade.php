@@ -66,7 +66,8 @@
 	      </form> -->
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a data-fancybox="gallery" href="{{ asset('pdf/ficha_tecnica_full_house.pdf') }}" target="_blank">Ficha ténica</a></li>
-	        <li><a href="#mod_casas">Ver casas</a></li>
+	        <li><a href="{{url('/')}}#mod_casas">Ver casas</a></li>
+	        <li><a href="{{url('/galerias')}}#fotos">Fotos</a></li>
 	        <!-- <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
@@ -139,7 +140,7 @@
 	    </div>
     </div>
 
-    <div class="encabezado" id="mod_casas"><h2>GALERIA DE IMÁGENES</h2></div>
+    <div class="encabezado" id="fotos"><h2>GALERIA DE IMÁGENES</h2></div>
 
 	<!-- lista de modelos -->
 	<div class="container proyectos">
@@ -155,9 +156,7 @@
 			@foreach($imagenes as $imagen)
 				@if($galeria->id == $imagen->galeria_id)
 				<div class="col xs-12 col-sm-4 col-md-3">
-					<a data-fancybox="gallery" href="http://fullhouseprefabricados.com/admin/files/proyectos/Casa%2025.jpg">
-						<img src="http://fullhouseprefabricados.com/admin/files/proyectos/Casa%2025.jpg" class="img img-responsive">	
-					</a>
+					<a data-fancybox="gallery" href="{{$imagen->enlace_imagen}}"><img src="{{$imagen->enlace_imagen}}" class="img img-responsive imagen-custom"></a>
 				</div>
 				<hr>
 				@endif
