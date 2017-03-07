@@ -148,17 +148,19 @@
 	<!-- galerias de proyectos -->
 		@foreach($galerias as $galeria)
 		<div class="row">
+			<hr>
 			<div class="row">
 				<h3 class="text-center">{{$galeria->titulo}}</h3>
 					<!-- TODO crear botones sociales -->
 			    </a>
 			</div>
+			<hr>
 			@foreach($imagenes as $imagen)
 				@if($galeria->id == $imagen->galeria_id)
 				<div class="col xs-12 col-sm-4 col-md-3">
 					<a data-fancybox="gallery" href="{{$imagen->enlace_imagen}}"><img src="{{$imagen->enlace_imagen}}" class="img img-responsive imagen-custom"></a>
 				</div>
-				<hr>
+				
 				@endif
 			@endforeach
 
