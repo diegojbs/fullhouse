@@ -16,6 +16,8 @@
 // });
 Route::get('/', 'MainController@index');
 
+Route::get('galerias', 'MainController@galerias');
+
 Route::get('inicio', 'MainController@index');
 
 // Route::get('gracias', 'ContactoController@index');

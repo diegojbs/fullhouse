@@ -19,4 +19,13 @@ class MainController extends Controller
     	// dd();
     	return view('inicio', ['proyectos' => $proyectos, 'detalles' => $detalles]);
     }
+
+    public function galerias(){
+    	
+        $galerias = DB::table('galerias')->paginate(4);
+        $imagenes = DB::table('imagenes_galerias')->get();
+
+    	// dd($imagenes);
+    	return view('galerias.index', ['galerias' => $galerias, 'imagenes' => $imagenes]);
+    }
 }

@@ -269,13 +269,15 @@ class ComposerStaticInit75effb17a24b91dc1dcbf67d967d0769
     );
 
     public static $classMap = array (
-        'ActualizarContactosTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_153515_actualizar_contactos_table.php',
-        'ActualizarTablaProyectos' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_143248_actualizar_tabla_proyectos.php',
+        'ActualizarContactosTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_153515_actualizar_contactos_table.php',
+        'ActualizarTablaProyectos' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_143248_actualizar_tabla_proyectos.php',
         'CrearDetalleCasasTabla' => __DIR__ . '/../..' . '/database/migrations/2017_03_03_042733_crear_detalle_casas_tabla.php',
-        'CrearTablaProyectos' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_121852_crear_tabla_proyectos.php',
-        'CreateContactosTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_24_152210_create_contactos_table.php',
-        'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
+        'CrearTablaGalerias' => __DIR__ . '/../..' . '/database/migrations/2017_03_07_140912_crear_tabla_galerias.php',
+        'CrearTablaImagenesGalerias' => __DIR__ . '/../..' . '/database/migrations/2017_03_07_140947_crear_tabla_imagenes_galerias.php',
+        'CrearTablaProyectos' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_121852_crear_tabla_proyectos.php',
+        'CreateContactosTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_152210_create_contactos_table.php',
+        'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2014_10_12_100000_create_password_resets_table.php',
+        'CreateUsersTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
