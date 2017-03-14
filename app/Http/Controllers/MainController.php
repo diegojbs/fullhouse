@@ -13,7 +13,9 @@ class MainController extends Controller
 {
     public function index(){
     	// $proyectos = Proyecto::all()->paginate(15);
-    	$proyectos = DB::table('proyectos')->paginate(15);
+    	$proyectos = DB::table('proyectos')
+                            ->orderBy('prioridad_orden', 'asc')
+                            ->paginate(15);
     	$detalles = DB::table('detalle_casas')->get();
 
     	// dd();

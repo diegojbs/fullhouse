@@ -271,6 +271,7 @@ class ComposerStaticInit75effb17a24b91dc1dcbf67d967d0769
     public static $classMap = array (
         'ActualizarContactosTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_153515_actualizar_contactos_table.php',
         'ActualizarTablaProyectos' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_143248_actualizar_tabla_proyectos.php',
+        'AgregarPrioridadProyectos' => __DIR__ . '/../..' . '/database/migrations/2017_03_14_183726_agregar_prioridad_proyectos.php',
         'CrearDetalleCasasTabla' => __DIR__ . '/../..' . '/database/migrations/2017_03_03_042733_crear_detalle_casas_tabla.php',
         'CrearTablaGalerias' => __DIR__ . '/../..' . '/database/migrations/2017_03_07_140912_crear_tabla_galerias.php',
         'CrearTablaImagenesGalerias' => __DIR__ . '/../..' . '/database/migrations/2017_03_07_140947_crear_tabla_imagenes_galerias.php',

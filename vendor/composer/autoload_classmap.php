@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'ActualizarContactosTable' => $baseDir . '/database/bk_anteriores/2017_02_24_153515_actualizar_contactos_table.php',
     'ActualizarTablaProyectos' => $baseDir . '/database/bk_anteriores/2017_02_24_143248_actualizar_tabla_proyectos.php',
+    'AgregarPrioridadProyectos' => $baseDir . '/database/migrations/2017_03_14_183726_agregar_prioridad_proyectos.php',
     'CrearDetalleCasasTabla' => $baseDir . '/database/migrations/2017_03_03_042733_crear_detalle_casas_tabla.php',
     'CrearTablaGalerias' => $baseDir . '/database/migrations/2017_03_07_140912_crear_tabla_galerias.php',
     'CrearTablaImagenesGalerias' => $baseDir . '/database/migrations/2017_03_07_140947_crear_tabla_imagenes_galerias.php',
