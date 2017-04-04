@@ -12,7 +12,8 @@
     
     <link rel="stylesheet" type="text/css" href="http://fullhouseprefabricados.com/recursos/css/bootstrap-social.css">
     <link  href="http://fullhouseprefabricados.com/recursos/fancybox/fancybox.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+	<!-- <link rel="stylesheet" href="http://fullhouseprefabricados.com/recursos/css/main.css"> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -84,25 +85,42 @@
 	</nav>
     <!-- fin barra de navegacion -->
 
-    <div class="container-fluid main_header">
-    	<div class="container well">
-	    	<div class="row">
+    <div class="container-fluid main_header img-back">
+    	<div class="container">
+	    	<div class="row  img-back">
 	    		<div class="col-xs-12 col-sm-6">
 	    			<img src="http://fullhouseprefabricados.com/recursos/img/logo.png" class="img-responsive">
 	    		</div>
 	    		<div class="col-xs-12 col-sm-6">
-	    			
-	    			<h1>Gracias <strong>{{$datos->nombre}}.</strong></h1>
+	    			<h1>Casas prefabricadas</h1>
 	    			<div>
-	    				<h2>Hemos recibido sus datos, le contactaremos a su correo electrónico o a su teléfono registrado.</h2>
-
-	    				<p>
-	    					<span class="h4">Le invitamos a seguirnos en las redes sociales. También le atendemos vía whatsapp.</span>
-	    				</p>
-
-	    				<p>
-	    					<span class="h4"><a href="{{url('/inicio')}}">Regresar a la pagina principal</a></span>
-	    				</p>
+	    				{!! Form::open(['url' => '/gracias', 'method' => 'POST']) !!}
+	    					<div class="form-group">
+							    
+							    <input type="text" class="form-control" name="nombre" placeholder="Nombre" required="true">
+							  </div>
+							  <div class="form-group">
+							    
+							    <input type="email" class="form-control" name="email" placeholder="Email" required="true">
+							  </div>
+							  <div class="form-group">
+							    <input class="form-control" type="text" name="telefonos" placeholder="Telefonos" required="true">
+							    <!-- <input type="text" class="form-control" name="telefonos" placeholder="Teléfonos" required="true"> -->
+							  </div>
+							  <div class="form-group">
+							    <input class="form-control" type="text" name="ciudad" placeholder="Ciudad" required="true">
+							    
+							  </div>
+							  <div class="form-group">
+							    <textarea class="form-control" rows="3" name="mensaje" placeholder="Escriba su solicitud aquí" required="true"></textarea>
+							  </div>
+							  <div class="checkbox">
+							    <label>
+							      <input type="checkbox" checked="true" required="true" name="t_datos"> Acepta nuestra política de tratamiento de datos
+							    </label>
+							  </div>
+							  <input type="submit" name="" class="btn btn-default naranja" value="Enviar">
+						{!! Form::close()  !!}
 	    			</div>
 	    		</div>
 	    	</div>
@@ -123,8 +141,44 @@
 	    </div>
     </div>
 
+    <div class="encabezado" id="mod_casas"><h2>Tipos de entega</h2></div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<div class="container">
+		@foreach($datos as $dato)
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>{{$dato->titulo}}</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p>{!! $dato->parrafo !!}</p>
+				</div>
+			</div>
+		@endforeach
+	</div>
+		
+
+	<!-- fin lista de modelos -->
+	<!-- pie de pagina -->
+	<div class="container-fluid well">
+		<div class="col xs-12 col-sm-4 text-right">
+			<h2>Síguenos en las redes sociales</h2>
+		</div>
+		<div class="col xs-12 col-sm-4 text-center">
+			<a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-4x social" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-4x social" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-4x social" aria-hidden="true"></i></a>
+		</div>
+		<div class="col xs-12 col-sm-4 text-center">
+			<b>Visita nuestras oficinas</b> <br>
+			Calle 12N # 6-101 Frente al niño Jesús de Praga <br>
+			Popayán
+		</div>
+	</div>
+	<!-- fin pie de pagina -->
+
+    
    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://fullhouseprefabricados.com/recursos/js/bootstrap.min.js"></script>
