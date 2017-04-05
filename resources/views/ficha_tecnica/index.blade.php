@@ -14,21 +14,26 @@
 		<div class="row">
 			@foreach($datos as $dato)
 				
-					@if($dato->ancho == 'Total')
+					@if($dato->tipo == "")
+						hola
+					@else
+						@if($dato->ancho == 'Total')
 						
-					<div class="col-xs-12" style="background-image: yellow;">
-					@else
-						<div class="col-xs-12 col-md-4"  style="background-image: yellow;">
+						<div class="col-xs-12" style="background-image: yellow;">
+						@else
+							<div class="col-xs-12 col-md-4"  style="background-image: yellow;">
+						@endif
+						@if($dato->tipo == 'Imagen')
+							<img src="{{$dato->enlace_archivo}}" class="img-responsive imagen-galeria">
+						@elseif($dato->tipo == 'Titulo')
+							<h2>{!! $dato->contenido !!}</h2>
+							<hr>
+						@else
+							<p>{!! $dato->contenido !!}</p>
+						@endif
+						</div>
 					@endif
-					@if($dato->tipo == 'Imagen')
-						<img src="{{$dato->enlace_archivo}}" class="img-responsive">
-					@elseif($dato->tipo == 'Titulo')
-						<h2>{!! $dato->contenido !!}</h2>
-						<hr>
-					@else
-						<p>{!! $dato->contenido !!}</p>
-					@endif
-					</div>
+
 				
 			@endforeach
 		</div>
