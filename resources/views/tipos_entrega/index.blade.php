@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <div class="encabezado" id="mod_casas"><h2>Tipos de entega</h2></div>
+    <div class="encabezado" id="mod_casas"><h2>Tipos de entrega</h2></div>
 
 	<div class="container">
 		@foreach($datos as $dato)

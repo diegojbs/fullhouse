@@ -51,5 +51,6 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    
     <!-- fin barra de navegacion -->
 

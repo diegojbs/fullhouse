@@ -21,7 +21,7 @@
 						
 						<div class="col-xs-12" style="background-image: yellow;">
 						@else
-							<div class="col-xs-12 col-md-4"  style="background-image: yellow;">
+							<div class="col-xs-12 col-sm-4 col-md-4"  style="background-image: yellow;">
 						@endif
 						@if($dato->tipo == 'Imagen')
 							<img src="{{$dato->enlace_archivo}}" class="img-responsive imagen-galeria">
