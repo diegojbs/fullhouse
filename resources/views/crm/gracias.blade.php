@@ -64,7 +64,7 @@
 	        <button type="submit" class="btn btn-default">Submit</button>
 	      </form> -->
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a data-fancybox="gallery" href="{{ asset('pdf/ficha_tecnica_full_house.pdf') }}" target="_blank">Ficha ténica</a></li>
+	        <li><a href="{{ asset('/ficha_tecnica') }}">Ficha ténica</a></li>
 	        <li><a href="{{ asset('/tipos') }}">Tipos de entrega</a></li>
 	        <li><a href="{{url('/')}}#mod_casas">Ver casas</a></li>
 	        <li><a href="{{url('/galerias')}}#fotos">Fotos</a></li>
