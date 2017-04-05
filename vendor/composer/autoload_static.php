@@ -279,6 +279,7 @@ class ComposerStaticInit75effb17a24b91dc1dcbf67d967d0769
         'CrearTablaProyectos' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_121852_crear_tabla_proyectos.php',
         'CreateContactosTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2017_02_24_152210_create_contactos_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2014_10_12_100000_create_password_resets_table.php',
+        'CreateUsersFichatecnica' => __DIR__ . '/../..' . '/database/migrations/2017_04_04_203400_create_users_fichatecnica.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/bk_anteriores/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',

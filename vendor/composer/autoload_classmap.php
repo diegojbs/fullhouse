@@ -16,6 +16,7 @@ return array(
     'CrearTablaProyectos' => $baseDir . '/database/bk_anteriores/2017_02_24_121852_crear_tabla_proyectos.php',
     'CreateContactosTable' => $baseDir . '/database/bk_anteriores/2017_02_24_152210_create_contactos_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/bk_anteriores/2014_10_12_100000_create_password_resets_table.php',
+    'CreateUsersFichatecnica' => $baseDir . '/database/migrations/2017_04_04_203400_create_users_fichatecnica.php',
     'CreateUsersTable' => $baseDir . '/database/bk_anteriores/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
