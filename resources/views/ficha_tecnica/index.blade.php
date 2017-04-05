@@ -15,7 +15,7 @@
 			@foreach($datos as $dato)
 				
 					@if($dato->tipo == "")
-						hola
+						
 					@else
 						@if($dato->ancho == 'Total')
 						
