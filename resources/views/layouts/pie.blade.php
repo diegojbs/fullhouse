@@ -11,7 +11,7 @@
         <div class="col xs-12 col-sm-4 text-center">
             <b>Visita nuestras oficinas</b> <br>
             Calle 12N # 6-101 Frente al niño Jesús de Praga <br>
-            Popayán Cauca
+            Popayán - Cauca - Colombia
         </div>
     </div>
     <!-- fin pie de pagina -->
