@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='Classification' content='Business'>
+    <meta name='url' content='http://www.fullhouseprefabricados.com'>
+    <meta name="description" content="Contruimos casas prefabricadas, economicas, de rapida construcción con los más altos estándares de calidad.
+    ">
+    <meta name="keywords" content="comprar casa, casas prefabricadas, casas economicas, casas para fincas, casas en cauca, casas en el valle, casas en nariño, prefabricados, full house, ofertas de casas prefabricadas, viviendas prefabricadas precios, cuanto puede costar una casa prefabricada, casas prefabricadas en hormigón, venta casas modulares, vivienda prefabricada, casas prefabricadas empresas">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Full House Prefabricados</title>
 
