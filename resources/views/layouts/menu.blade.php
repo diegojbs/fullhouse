@@ -52,6 +52,7 @@
             <li><a href="{{url('/galerias')}}#fotos">Fotos</a></li>
             <li><a href="{{ asset('/ficha_tecnica') }}">Ficha ténica</a></li>
             <li><a href="{{ asset('/tipos') }}">Tipos de entrega</a></li>
+            <li><a href="{{ asset('/oficinas') }}">Oficinas</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

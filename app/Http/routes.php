@@ -28,6 +28,8 @@ Route::resource('search', 'ProyectoController@show');
 
 Route::resource('tipos', 'TipoEntregaController');
 
+Route::resource('oficinas', 'OficinaController');
+
 Route::resource('ficha_tecnica', 'FichaTecnicaController');
 
 Route::resource('/gracias', 'ContactoController'
