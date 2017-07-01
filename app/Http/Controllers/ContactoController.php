@@ -29,10 +29,10 @@ class ContactoController extends Controller
      */
     public function create()
     {
-        
+
     }
 
-    
+
 
     /**
      * Store a newly created resource in storage.
@@ -43,7 +43,12 @@ class ContactoController extends Controller
     public function store(Request $request)
     {
         // dd($request->email);
+        if (!$request.has('nombre') || !$request.has('email') || !$request.has('telefonos') || !$request.has('ciudad') || !$request.has('mensaje')){
+          return back();
+        }
+        
         $contacto = new Contacto();
+
 
         $contacto->nombre = $request->nombre;
         $contacto->email = $request->email;
