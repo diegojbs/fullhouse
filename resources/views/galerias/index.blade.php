@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-    <div class="encabezado" id="fotos"><h2>GALERIA DE IMÁGENES</h2></div>
+    <div class="encabezado" id="fotos"><h2>FOTOS DE PROYECTOS</h2></div>
 
 	<!-- lista de modelos -->
 
@@ -47,7 +47,7 @@
 
 
 
-		<div class="text-center"> <span class="h3">Ver más imágenes: </span></div>
+		<div class="text-center"> <span class="h3">Ver más proyectos </span></div>
 		<div class="text-center">{{ $galerias->links() }}</div>
 	</div>
 @endsection
