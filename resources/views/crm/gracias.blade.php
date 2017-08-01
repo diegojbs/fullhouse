@@ -33,7 +33,7 @@
 	    			<a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
 					<a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
 					<a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
-	    			<a href="#" target="_blank"><i class="fa fa-youtube fa-4x social" aria-hidden="true"></i></a>
+	    			<a href="https://www.youtube.com/channel/UCU21ZwYXQ-jmUkty77O5suA" target="_blank"><i class="fa fa-youtube fa-4x social" aria-hidden="true"></i></a>
 	    		</div>
 	    	</div>
 	    </div>
