@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="encabezado" id="fotos"><h2>OFICINAS</h2></div>
+<div class="encabezado" id="fotos"><h2>OFICINAS Y CONTACTOS</h2></div>
 
 
 

@@ -24,7 +24,9 @@ class MainController extends Controller
 
     public function galerias(){
     	
-        $galerias = DB::table('galerias')->paginate(4);
+        $galerias = DB::table('galerias')
+                            ->orderBy('orden', 'acs')
+                            ->paginate(2);
         $imagenes = DB::table('imagenes_galerias')->get();
 
     	// dd($imagenes);
