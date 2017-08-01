@@ -48,11 +48,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{url('/')}}#mod_casas">Ver casas</a></li>
-            <li><a href="{{url('/galerias')}}#fotos">Fotos</a></li>
+            <li><a href="{{url('/')}}#mod_casas">Modelos de casas</a></li>
+            <li><a href="{{url('/galerias')}}#fotos">Fotos de proyectos</a></li>
             <li><a href="{{ asset('/ficha_tecnica') }}">Ficha ténica</a></li>
             <li><a href="{{ asset('/tipos') }}">Tipos de entrega</a></li>
-            <li><a href="{{ asset('/oficinas') }}">Oficinas</a></li>
+            <li><a href="{{ asset('/oficinas') }}">Oficinas y contactos</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

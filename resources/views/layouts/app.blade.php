@@ -7,7 +7,7 @@
                     <img src="http://fullhouseprefabricados.com/recursos/img/logo.png" class="img-responsive">
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <h1>Casas prefabricadas</h1>
+                    <h2>Casas en construcción liviana</h2>
                     <div>
                         {!! Form::open(['url' => '/gracias', 'method' => 'POST']) !!}
                             <div class="form-group">
@@ -50,7 +50,7 @@
                     <a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
                     <a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
-                    
+                    <a href="#" target="_blank"><i class="fa fa-youtube fa-2x social" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
