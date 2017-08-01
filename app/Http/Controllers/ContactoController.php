@@ -43,10 +43,10 @@ class ContactoController extends Controller
     public function store(Request $request)
     {
         // dd($request->email);
-        if (!$request.has('nombre') || !$request.has('email') || !$request.has('telefonos') || !$request.has('ciudad') || !$request.has('mensaje')){
+        if (!$request->has('nombre') || !$request->has('email') || !$request->has('telefonos') || !$request->has('ciudad') || !$request->has('mensaje')){
           return back();
         }
-        
+
         $contacto = new Contacto();
 
 

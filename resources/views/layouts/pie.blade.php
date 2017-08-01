@@ -7,9 +7,10 @@
             <a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-4x social" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-4x social" aria-hidden="true"></i></a>
             <a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-4x social" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-youtube fa-4x social" aria-hidden="true"></i></a>
         </div>
         <div class="col xs-12 col-sm-4 text-center">
-            <b>Visita nuestras oficinas</b> <br>
+            <b>Oficina principal</b> <br>
             Calle 12N # 6-101 Frente al niño Jesús de Praga <br>
             Popayán - Cauca - Colombia
         </div>
