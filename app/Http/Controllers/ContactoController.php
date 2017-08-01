@@ -42,6 +42,10 @@ class ContactoController extends Controller
      */
     public function store(Request $request)
     {
+       if (!$request->has('nombre') || !$request->has('email') || !$request->has('telefonos') || !$request->has('ciudad') || !$request->has('mensaje')){
+          return back();
+        }
+
         // dd($request->email);
         $contacto = new Contacto();
 
