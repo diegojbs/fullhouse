@@ -7,7 +7,8 @@
                     <img src="http://fullhouseprefabricados.com/recursos/img/logo.png" class="img-responsive">
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                    <h2>Casas en construcción liviana</h2>
+                    <h3>Casas en construcción liviana</h3>
+                    <i>Cotizaciones e inquietudes</i>
                     <div>
                         {!! Form::open(['url' => '/gracias', 'method' => 'POST']) !!}
                             <div class="form-group">
@@ -48,8 +49,8 @@
                 <div class="col-xs-12 col-sm-6 text-right">
                     <span class="h3 text-center">Redes sociales </span> 
                     <a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-2x social" aria-hidden="true"></i></a>
-                    <a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/fullhouseconstruccionliviana/" target="_blank"><i class="fa fa-facebook fa-2x social" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/fullhouseconstruccionliviana/" target="_blank"><i class="fa fa-instagram fa-2x social" aria-hidden="true"></i></a>
                     <a href="https://www.youtube.com/channel/UCU21ZwYXQ-jmUkty77O5suA" target="_blank"><i class="fa fa-youtube fa-2x social" aria-hidden="true"></i></a>
                 </div>
             </div>

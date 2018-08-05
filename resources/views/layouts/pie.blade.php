@@ -5,13 +5,13 @@
         </div>
         <div class="col xs-12 col-sm-4 text-center">
             <a href="https://twitter.com/FHPrefabricados" target="_blank"><i class="fa fa-twitter fa-4x social" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-facebook fa-4x social" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/fullhouseprefabricados/" target="_blank"><i class="fa fa-instagram fa-4x social" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/fullhouseconstruccionliviana/" target="_blank"><i class="fa fa-facebook fa-4x social" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/fullhouseconstruccionliviana/" target="_blank"><i class="fa fa-instagram fa-4x social" aria-hidden="true"></i></a>
             <a href="https://www.youtube.com/channel/UCU21ZwYXQ-jmUkty77O5suA" target="_blank"><i class="fa fa-youtube fa-4x social" aria-hidden="true"></i></a>
         </div>
         <div class="col xs-12 col-sm-4 text-center">
             <b>Oficina principal</b> <br>
-            Calle 12N # 6-101 Frente al niño Jesús de Praga <br>
+            Calle 12N # 6-101 Barrio Belalcazar <br>
             Popayán - Cauca - Colombia
         </div>
     </div>
