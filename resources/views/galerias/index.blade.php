@@ -25,7 +25,7 @@
 
 					<div class="col xs-12 col-sm-3 col-md-3">
 						<a data-fancybox="gallery" href="{{$imagen->enlace_imagen}}">
-							<img src="{{$imagen->enlace_imagen}}" class="img-responsive imagen-galeria">
+							<img src="{{Storage::url('public/imagenesgalerias/'.$imagen->imagen)}}" class="img-responsive imagen-galeria">
 						</a>
 						<!-- <h4>{!!$i!!}</h4> -->
 						<?php 

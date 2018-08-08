@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
-				<a data-fancybox="gallery" href="{{$proyecto->enlace_archivo}}"><img src="{{$proyecto->enlace_archivo}}" class="img img-responsive imagen-custom"></a>
+				<a data-fancybox="gallery" href="{{Storage::url('public/proyectos/'.$proyecto->imagen)}}"><img src="{{Storage::url('public/proyectos/'.$proyecto->imagen)}}" class="img img-responsive imagen-custom"></a>
 				<!-- <img src="{{$proyecto->imagen}}" class="img-responsive imagen-custom"> -->
 			</div>
 		</div>

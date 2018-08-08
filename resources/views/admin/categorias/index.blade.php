@@ -7,9 +7,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
-                        <col-xs-12 class="col-md-8"><b>Imágenes de :</b> {{$padre->titulo}}</col-xs-12>
-                        <col-xs-12 class="col-md-4 text-right">
-                            <a class="btn btn-warning" href="{{url('/admin-galerias/'.$padre->id)}}">Agregar imagen</a>
+                        <col-xs-12 class="col-md-6">Categorías de proyectos</col-xs-12>
+                        <col-xs-12 class="col-md-6 text-right">
+                            <a class="btn btn-warning" href="{{url('/admin-categorias')}}">Agregar nuevo</a>
                         </col-xs-12>
                     </div>
                 </div>
@@ -21,23 +21,18 @@
                         @endif
                     </div>
                     <div class="row">
+                        {{-- Form de nuevo proyecto --}}
                         {!! Form::open(
-                                ['route' => ['admin-imagenes-galerias.'.$accion, $accion == 'update' ? $ultimo : null], 
-                                'method'=>$metodo,
-                                'files'=>true]) !!}
-                        {!! Form::hidden('galeria_id', $accion == 'update' ? $ultimo->galeria_id : $padre->id)!!}
+                                ['route' => ['admin-categorias.'.$accion, $accion == 'update' ? $ultimo : null], 
+                                'method'=>$metodo]) !!}
+                        
                         <div class="form-group">
-                            {!! Form::label('imagen', 'Imagen') !!}
-                            {!! Form::file('imagen', array('class'=>'form-control')) !!}
+                            {!! Form::label('nombre', 'Nombre') !!}
+                            {!! Form::text('nombre', ($accion == 'update' ? $ultimo->nombre : null),  ['class'=>'form-control']) !!}
                         </div>
-                        <div class="form-group text-center">
-                            @if($accion == 'update')
-                                {!! Form::label('imagen_actual', 'Imagen actual') !!}
-                                <img width="100px" src="{{Storage::url('public/imagenesgalerias/'.$ultimo->imagen)}}" alt=""  class="img-rounded">
-                                {{$ultimo->imagen}}
-                            @endif
+                        <div class="form-group">
+                            {!! Form::submit('Guardar', array('class'=>'form-control btn-primary')) !!}
                         </div>
-                        {!! Form::submit('Guardar', array('class'=>'form-control btn-primary')) !!}
                         {!! Form::close() !!}
                     </div>
                 </div>
@@ -50,24 +45,21 @@
     <div class="row">
         <table class="table table-striped">
             <thead>
-                <th>Imagen</th>
+                <th>Nombre</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
             </thead>
             <tbody>
                 @foreach($malla as $registro)
                     <tr>
+                        <td>{{$registro->nombre}}</td>
                         <td>
-                            {{-- {{$registro->imagen}} --}}
-                            <img width="100px" src="{{Storage::url('public/imagenesgalerias/'.$registro->imagen)}}" alt=""  class="img-rounded">
-                        </td>
-                        <td>
-                            <a href="{{route('admin-imagenes-galerias.edit',$registro->id)}}">
+                            <a href="{{route('admin-categorias.edit',$registro->id)}}">
                                 <button class="btn btn-warning"><i class="fa fa-cog" aria-hidden="true"></i></button>
                               </a> 
                         </td>
                         <td>
-                            {{ Form::open(['method' => 'DELETE', 'route' => ['admin-imagenes-galerias.destroy', $registro->id]]) }}
+                            {{ Form::open(['method' => 'DELETE', 'route' => ['admin-categorias.destroy', $registro->id]]) }}
                                 <!-- {{ Form::submit('X', ['class' => 'btn btn-danger']) }} -->
                                 <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                             {{ Form::close() }}

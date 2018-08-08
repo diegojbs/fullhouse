@@ -70,9 +70,9 @@
                         <div class="form-group text-center">
                             @if($accion == 'update')
                                 {!! Form::label('imagen_actual', 'Imagen actual') !!}
-                                <img width="100px" src="{{Storage::url('public/proyectos/'.$ultimo->imagen)}}" alt="">
+                                <img width="100px" src="{{Storage::url('public/proyectos/'.$ultimo->imagen)}}" alt="" class="img-rounded">
+                                {{$ultimo->imagen}}
                             @endif
-                            {{$ultimo->imagen}}
                         </div>
 
                         {!! Form::submit('Guardar', array('class'=>'form-control btn-primary')) !!}
@@ -104,7 +104,11 @@
                         <td>{{'Categorias'}}</td>
                         <td>{{$registro->contenido}}</td>
                         <td>{{$registro->prioridad_orden}}</td>
-                        <td><a href="{{Storage::url('public/proyectos/'.$registro->imagen)}}" target="_blank">Ver imagen</a></td>
+                        <td>
+                            <a href="{{Storage::url('public/proyectos/'.$registro->imagen)}}" target="_blank">
+                                <img width="50px" src="{{Storage::url('public/proyectos/'.$registro->imagen)}}" alt="" class="img-rounded">
+                            </a>
+                        </td>
                         <td>
                             <a href="{{route('admin-proyectos.edit',$registro->id)}}">
                                 <button class="btn btn-warning"><i class="fa fa-cog" aria-hidden="true"></i></button>

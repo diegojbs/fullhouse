@@ -52,5 +52,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('admin-galerias', 'GaleriasAdminController');
 	Route::resource('admin-imagenes-galerias', 'GaleriasImagenesAdminController');
 	Route::resource('admin-detalles-proyectos', 'DetallesCasasAdminController');
+	Route::resource('admin-categorias', 'CategoriasAdminController');
 });
 

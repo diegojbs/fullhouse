@@ -49,6 +49,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/admin-proyectos') }}">Proyectos</a></li>
+                    <li><a href="{{ url('/admin-categorias') }}">Categorías</a></li>
                     <li><a href="{{ url('/admin-contactos') }}">Contactos</a></li>
                     <li><a href="{{ url('/admin-galerias') }}">Galerías</a></li>
                     <li><a href="{{ url('/admin-tipos-entrega') }}">Tipos entrega</a></li>

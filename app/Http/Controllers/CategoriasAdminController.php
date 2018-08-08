@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\TipoEntrega;
+use App\Categoria;
 
-class TiposEntregaAdminController extends Controller
+class CategoriasAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,11 +16,11 @@ class TiposEntregaAdminController extends Controller
      */
     public function index()
     {
-        $malla = TipoEntrega::orderBy('id', 'desc')->get();
-        $ultimo = TipoEntrega::orderBy('id', 'desc')->first();
+        $malla = Categoria::orderBy('id', 'desc')->get();
+        $ultimo = Categoria::orderBy('id', 'desc')->first();
         $metodo = 'post';
         $accion = 'store';
-        return view('admin.tipos-entrega.index', compact('malla', 'ultimo', 'metodo', 'accion'));
+        return view('admin.categorias.index', compact('malla', 'ultimo', 'metodo', 'accion'));
     }
 
     /**
@@ -41,19 +41,18 @@ class TiposEntregaAdminController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new TipoEntrega();
-        $data->titulo = $request->titulo;
-        $data->parrafo = $request->parrafo;
+        $data = new Categoria();
+        $data->nombre = $request->nombre;
 
         // dd($data);
 
         $data->save();
 
-        $malla = TipoEntrega::orderBy('id', 'desc')->get();
-        $ultimo = TipoEntrega::orderBy('id', 'desc')->first();
+        $malla = Categoria::orderBy('id', 'desc')->get();
+        $ultimo = Categoria::orderBy('id', 'desc')->first();
         $metodo = 'post';
         $accion = 'store';
-        return view('admin.tipos-entrega.index', compact('malla', 'ultimo', 'metodo', 'accion'));
+        return view('admin.categorias.index', compact('malla', 'ultimo', 'metodo', 'accion'));
     }
 
     /**
@@ -75,11 +74,12 @@ class TiposEntregaAdminController extends Controller
      */
     public function edit($id)
     {
-        $malla = TipoEntrega::orderBy('id', 'desc')->get();
-        $ultimo = TipoEntrega::find($id);
+        $malla = Categoria::orderBy('id', 'desc')->get();
+        $ultimo = Categoria::find($id);
+        // dd($ultimo);
         $metodo = 'put';
         $accion = 'update';
-        return view('admin.tipos-entrega.index', compact('malla', 'ultimo', 'metodo', 'accion'));
+        return view('admin.categorias.index', compact('malla', 'ultimo', 'metodo', 'accion'));
     }
 
     /**
@@ -91,19 +91,18 @@ class TiposEntregaAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = TipoEntrega::find($id);
-        $data->titulo = $request->titulo;
-        $data->parrafo = $request->parrafo;
+        $data = Categoria::find($id);
+        $data->nombre = $request->nombre;
 
         // dd($data);
 
         $data->save();
 
-        $malla = TipoEntrega::orderBy('id', 'desc')->get();
-        $ultimo = TipoEntrega::find($id);
+        $malla = Categoria::orderBy('id', 'desc')->get();
+        $ultimo = Categoria::find($id);
         $metodo = 'put';
         $accion = 'update';
-        return view('admin.tipos-entrega.index', compact('malla', 'ultimo', 'metodo', 'accion'));
+        return view('admin.categorias.index', compact('malla', 'ultimo', 'metodo', 'accion'));
     }
 
     /**
@@ -114,12 +113,13 @@ class TiposEntregaAdminController extends Controller
      */
     public function destroy($id)
     {
-        $data = TipoEntrega::find($id);
+        $data = Categoria::find($id);
         $data->delete();
-        $malla = TipoEntrega::orderBy('id', 'desc')->get();
-        $ultimo = TipoEntrega::orderBy('id', 'desc')->first();
+
+        $malla = Categoria::orderBy('id', 'desc')->get();
+        $ultimo = Categoria::orderBy('id', 'desc')->first();
         $metodo = 'post';
-        $accion = 'store';
-        return view('admin.tipos-entrega.index', compact('malla', 'ultimo', 'metodo', 'accion'));
+        $accion = 'update';
+        return view('admin.categorias.index', compact('malla', 'ultimo', 'metodo', 'accion'));
     }
 }

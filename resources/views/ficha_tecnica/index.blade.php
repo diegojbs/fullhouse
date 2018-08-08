@@ -24,7 +24,7 @@
 							<div class="col-xs-12 col-sm-4 col-md-4"  style="background-image: yellow;">
 						@endif
 						@if($dato->tipo == 'Imagen')
-							<img src="{{$dato->enlace_archivo}}" class="img-responsive imagen-galeria">
+							<img src="{{Storage::url('public/fichatecnica/'.$dato->imagen)}}" class="img-responsive imagen-galeria">
 						@elseif($dato->tipo == 'Titulo')
 							<h2>{!! $dato->contenido !!}</h2>
 							<hr>

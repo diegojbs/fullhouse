@@ -75,11 +75,13 @@ class ProyectosAdminController extends Controller
         if($data->save()){
             $ultimo = Proyecto::orderBy('id', 'desc')->first();
             // Guardar categorias asociadas
-            foreach($request->categorias as $categoria){
-                $data_categoria = new CategoriaProyecto();
-                $data_categoria->proyecto_id = $ultimo->id;
-                $data_categoria->categoria_id = $categoria;
-                $data_categoria->save();
+            if (count($request->categorias) > 0){
+                foreach($request->categorias as $categoria){
+                    $data_categoria = new CategoriaProyecto();
+                    $data_categoria->proyecto_id = $ultimo->id;
+                    $data_categoria->categoria_id = $categoria;
+                    $data_categoria->save();
+                }
             }
             $mensaje = "Registro guardado";
             return back()->with('mensaje');
@@ -174,11 +176,13 @@ class ProyectosAdminController extends Controller
             }
 
             // Guardar nuevas categorias asociadas
-            foreach($request->categorias as $categoria){
+            if (count($request->categorias) > 0){
+                foreach($request->categorias as $categoria){
                 $data_categoria = new CategoriaProyecto();
                 $data_categoria->proyecto_id = $ultimo->id;
                 $data_categoria->categoria_id = $categoria;
                 $data_categoria->save();
+            }
             }
             $mensaje = "Registro guardado";
             return back()->with('mensaje');
@@ -196,6 +200,15 @@ class ProyectosAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = Proyecto::find($id);
+        $data->delete();
+
+        $malla = Proyecto::orderBy('id', 'desc')->get();
+        $ultimo = Proyecto::orderBy('id', 'desc')->first();
+        $categorias = Categoria::all();
+        $categorias = $categorias->pluck('nombre', 'id');
+        $metodo = 'post';
+        $accion = 'store';
+        return view('admin.proyectos.index', compact('malla', 'ultimo', 'metodo', 'accion', 'categorias'));
     }
 }
