@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appfront')
 @section('content')
 
     <div class="encabezado" id="fotos"><h2>FOTOS DE PROYECTOS</h2></div>

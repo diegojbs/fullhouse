@@ -39,3 +39,16 @@ Route::resource('/gracias', 'ContactoController'
 	);
 
 Route::resource('/graciass', 'ContactoController@index');
+Route::auth();
+
+//Controladores para admin
+Route::resource('admin-proyectos', 'ProyectosAdminController');
+Route::resource('admin-contactos', 'ContactosAdminController');
+Route::resource('admin-tipos-entrega', 'TiposEntregaAdminController');
+Route::resource('admin-oficinas', 'OficinasAdminController');
+Route::resource('admin-ficha-tecnica', 'FichaTecnicaAdminController');
+Route::resource('admin-galerias', 'GaleriasAdminController');
+Route::resource('admin-imagenes-galerias', 'GaleriasImagenesAdminController');
+Route::resource('admin-detalles-proyectos', 'DetallesCasasAdminController');
+
+

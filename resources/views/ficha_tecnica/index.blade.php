@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appfront')
 @section('content')
 
     <div class="encabezado" id="mod_casas"><h2>Ficha técnica</h2></div>
