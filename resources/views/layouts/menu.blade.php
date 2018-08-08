@@ -48,7 +48,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{url('/')}}#mod_casas">Modelos de casas</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modelos de casas <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{url('/')}}#mod_casas">Todas las casas</a></li>
+                <li role="separator" class="divider"></li>
+                @foreach($menu_categorias as $cate_menu)
+                  <li><a href="{{url('/categoria-casas/'.$cate_menu->id)}}">{{$cate_menu->nombre}}</a></li>
+                @endforeach
+              </ul>
+            </li>
             <li><a href="{{url('/galerias')}}#fotos">Fotos de proyectos</a></li>
             <li><a href="{{ asset('/ficha_tecnica') }}">Ficha ténica</a></li>
             <li><a href="{{ asset('/tipos') }}">Tipos de entrega</a></li>

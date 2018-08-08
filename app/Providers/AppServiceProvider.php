@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Categoria;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $menu_categorias = Categoria::all();
+        session(['menu_categorias' => $menu_categorias ]);
+        view()->share('menu_categorias', session('menu_categorias') );
+        // dd($menu_categorias);
     }
 
     /**

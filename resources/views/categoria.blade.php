@@ -1,17 +1,19 @@
 @extends('layouts.appfront')
 @section('content')
+    
 
-    <div class="encabezado" id="mod_casas"><h2>MODELOS DE CASAS</h2></div>
+	<div class="encabezado" id="mod_casas"><h2>{{$categoria_actual->nombre}}</h2></div>
+	<div class="text-center">{{ $proyectos->links() }}</div>
 
 	<!-- lista de modelos -->
 	<div class="container proyectos">
 		
-		
+		@foreach($proyectos as $proyecto)
 		<div class="row">
-			
 			<div class="col-xs-12 col-sm-6">
 				<div class="ficha_tecnica">
 					<h3>{{$proyecto->titulo}}</h3>
+					<h5><i>{{$categoria_actual->nombre}}</i></h5>
 						<p>
 							{{$proyecto->contenido}}
 						</p>
@@ -32,9 +34,6 @@
 						       <i class="fa fa-facebook-official fa-2x ico-facebook"></i>
 						    </a>
 						</p>
-						<p>
-							<span class="h4"><a href="{{url('/')}}">Ver más modelos</a></span>
-						</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
@@ -43,5 +42,13 @@
 			</div>
 		</div>
 		<hr>
+		@endforeach
 		
+		{{-- <div class="text-center"> <span class="h3">Ver más modelos de casas: </span></div> --}}
+		
+		
+
+	<!-- fin lista de modelos -->
+	</div>
+	
 @endsection

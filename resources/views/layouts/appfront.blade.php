@@ -1,8 +1,9 @@
+
 @include('layouts.menu')
 
     <div class="container-fluid main_header img-back">
         <div class="container">
-            <div class="row  img-back">
+            <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <img src="http://fullhouseprefabricados.com/recursos/img/logo.png" class="img-responsive">
                 </div>
@@ -41,10 +42,10 @@
                 </div>
             </div>
             <div class="row row-social">
-                <div class="col-xs-12 col-sm-6 text-left content-tele">
-                    <i class="fa fa-phone fa-2x social" aria-hidden="true"></i> 
-                    <i class="fa fa-whatsapp fa-2x social" aria-hidden="true"></i>
-                    <span class="h3 text-center">3173314579 - (2) 8350808 - 3183516803</span> 
+                <div class="col-xs-12 col-sm-6 text-left content-tele text-center">
+                    {{-- <i class="fa fa-phone fa-2x social" aria-hidden="true"></i> 
+                    <i class="fa fa-whatsapp fa-2x social" aria-hidden="true"></i> --}}
+                    <span class="h3 text-center warning">3173314579 - (2) 8350808 - 3183516803</span> 
                 </div>
                 <div class="col-xs-12 col-sm-6 text-right">
                     <span class="h3 text-center">Redes sociales </span> 

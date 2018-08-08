@@ -2,8 +2,8 @@
 @section('content')
     
 
-    <div class="encabezado" id="mod_casas"><h2>MODELOS DE CASAS</h2></div>
-
+    <div class="encabezado" id="mod_casas"><h2>Modelos de casas</h2></div>
+	<div class="text-center">{{ $proyectos->links() }}</div>
 	<!-- lista de modelos -->
 	<div class="container proyectos">
 		
@@ -24,8 +24,8 @@
 							@endforeach
 						</p>
 						<p>
-							<span class="h3">Compartir:</span>
-							<a href="whatsapp://send?text={{url('/search')}}/{{$proyecto->id}}" data-action="share/whatsapp/share">
+							<span class="h4"><i>Compartir este modelo </i></span>
+							<a target="_blank" href="https://wa.me/?text={{url('/search')}}/{{$proyecto->id}}" data-action="share/whatsapp/share">
 								<i class="fa fa-whatsapp fa-2x ico-whatsapp" aria-hidden="true"></i>
 							</a>
 							<a href="https://www.facebook.com/sharer/sharer.php?u={{url('/search')}}/{{$proyecto->id}}&img[0]={{$proyecto->enlace_archivo}}" target="_blank">
@@ -42,8 +42,8 @@
 		<hr>
 		@endforeach
 		
-		<div class="text-center"> <span class="h3">Ver más modelos de casas: </span></div>
-		<div class="text-center">{{ $proyectos->links() }}</div>
+		{{-- <div class="text-center"> <span class="h3">Ver más modelos de casas</span></div> --}}
+		
 		
 
 	<!-- fin lista de modelos -->

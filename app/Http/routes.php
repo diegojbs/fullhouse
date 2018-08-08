@@ -15,6 +15,7 @@
 //     return view('inicio');
 // });
 Route::get('/', 'MainController@index');
+Route::get('categoria-casas/{categoria_id}', 'MainController@categoria');
 
 Route::get('galerias', 'MainController@galerias');
 
@@ -42,13 +43,14 @@ Route::resource('/graciass', 'ContactoController@index');
 Route::auth();
 
 //Controladores para admin
-Route::resource('admin-proyectos', 'ProyectosAdminController');
-Route::resource('admin-contactos', 'ContactosAdminController');
-Route::resource('admin-tipos-entrega', 'TiposEntregaAdminController');
-Route::resource('admin-oficinas', 'OficinasAdminController');
-Route::resource('admin-ficha-tecnica', 'FichaTecnicaAdminController');
-Route::resource('admin-galerias', 'GaleriasAdminController');
-Route::resource('admin-imagenes-galerias', 'GaleriasImagenesAdminController');
-Route::resource('admin-detalles-proyectos', 'DetallesCasasAdminController');
-
+Route::group(['middleware' => 'auth'], function () {
+	Route::resource('admin-proyectos', 'ProyectosAdminController');
+	Route::resource('admin-contactos', 'ContactosAdminController');
+	Route::resource('admin-tipos-entrega', 'TiposEntregaAdminController');
+	Route::resource('admin-oficinas', 'OficinasAdminController');
+	Route::resource('admin-ficha-tecnica', 'FichaTecnicaAdminController');
+	Route::resource('admin-galerias', 'GaleriasAdminController');
+	Route::resource('admin-imagenes-galerias', 'GaleriasImagenesAdminController');
+	Route::resource('admin-detalles-proyectos', 'DetallesCasasAdminController');
+});
 
