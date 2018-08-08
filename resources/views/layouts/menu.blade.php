@@ -13,10 +13,10 @@
     <title>Full House Prefabricados</title>
 
     <!-- Bootstrap -->
-    <link href="http://fullhouseprefabricados.com/recursos/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fullhouseprefabricados.com/recursos/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="http://fullhouseprefabricados.com/recursos/css/bootstrap-social.css">
-    <link  href="http://fullhouseprefabricados.com/recursos/fancybox/fancybox.css" rel="stylesheet">
+    <link  href="https://fullhouseprefabricados.com/recursos/fancybox/fancybox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="http://fullhouseprefabricados.com/recursos/css/main.css"> -->
