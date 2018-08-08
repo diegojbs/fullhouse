@@ -15,11 +15,11 @@
     <!-- Bootstrap -->
     <link href="https://fullhouseprefabricados.com/recursos/css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="http://fullhouseprefabricados.com/recursos/css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="https://fullhouseprefabricados.com/recursos/css/bootstrap-social.css">
     <link  href="https://fullhouseprefabricados.com/recursos/fancybox/fancybox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="http://fullhouseprefabricados.com/recursos/css/main.css"> -->
+    <!-- <link rel="stylesheet" href="https://fullhouseprefabricados.com/recursos/css/main.css"> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,7 +28,7 @@
     <![endif]-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/ffee898d61.js"></script>
-    <script src="http://fullhouseprefabricados.com/recursos/fancybox/fancybox.js"></script>
+    <script src="https://fullhouseprefabricados.com/recursos/fancybox/fancybox.js"></script>
   </head>
   <body>
     
