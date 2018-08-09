@@ -14,7 +14,7 @@
         </div>
         <div class="col xs-12 col-sm-4 text-center">
             <b>Oficina principal</b> <br>
-            Calle 12N # 6-101 Barrio Belalcazar <br>
+            Calle 13 Norte # 6-101 Barrio Belalcazar <br>
             Popayán - Cauca - Colombia
         </div>
     </div>
