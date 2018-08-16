@@ -120,6 +120,14 @@ class GaleriasImagenesAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $data = ImagenGaleria::find($id);
+        Storage::delete('public/imagenesgalerias/'.$data->imagen);
+        $data->delete();
+
+        $padre = Galeria::where('id',$data->galeria_id)->first();
+        $malla = ImagenGaleria::where('galeria_id', $padre->id)->orderBy('id', 'desc')->get();
+        $metodo = 'post';
+        $accion = 'store';
+        return view('admin.galerias.show', compact('malla', 'ultimo', 'metodo', 'accion', 'padre'));
     }
 }
