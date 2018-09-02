@@ -39,7 +39,33 @@ class GaleriasImagenesAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new ImagenGaleria();
+
+        if($request->file('imagen')){
+            
+            $imagen = $request->file('imagen');
+            $nombre_imagen = date('YmdHis').$imagen->getClientOriginalName();
+            $data->imagen = $nombre_imagen;
+            $data->galeria_id = $request->galeria_id;
+
+            $resultado = Storage::put(
+                'public/imagenesgalerias/'.$nombre_imagen,
+                file_get_contents($request->file('imagen')->getRealPath())
+            );
+        }
+
+        // Fin guardado imagen
+
+        $data = $data->save();
+        $ultimo = ImagenGaleria::orderBy('id', 'desc')->first();
+        // dd($ultimo);
+
+        // $ultimo = ImagenGaleria::find($id);
+        $padre = Galeria::where('id',$ultimo->galeria_id)->first();
+        $malla = ImagenGaleria::where('galeria_id', $padre->id)->orderBy('id', 'desc')->get();
+        $metodo = 'put';
+        $accion = 'update';
+        return view('admin.galerias.show', compact('malla', 'ultimo', 'metodo', 'accion', 'padre'));
     }
 
     /**
