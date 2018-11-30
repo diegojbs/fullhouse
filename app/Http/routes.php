@@ -19,6 +19,8 @@ Route::get('categoria-casas/{categoria_id}', 'MainController@categoria');
 
 Route::get('galerias', 'MainController@galerias');
 
+Route::get('videos', 'MainController@videos');
+
 Route::get('inicio', 'MainController@index');
 
 // Route::get('gracias', 'ContactoController@index');
@@ -53,5 +55,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('admin-imagenes-galerias', 'GaleriasImagenesAdminController');
 	Route::resource('admin-detalles-proyectos', 'DetallesCasasAdminController');
 	Route::resource('admin-categorias', 'CategoriasAdminController');
+	Route::resource('admin-videos', 'VideosAdminController');
 });
 

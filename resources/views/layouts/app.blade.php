@@ -55,6 +55,12 @@
                     <li><a href="{{ url('/admin-tipos-entrega') }}">Tipos entrega</a></li>
                     <li><a href="{{ url('/admin-ficha-tecnica') }}">Fecha técnica</a></li>
                     <li><a href="{{ url('/admin-oficinas') }}">Oficinas</a></li>
+                    <li>
+                        <a href="{{ url('/admin-videos') }}">
+                            Vídeos
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

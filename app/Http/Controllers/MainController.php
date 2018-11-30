@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Proyecto;
 use DB;
 use App\Categoria;
+use App\Video;
 
 class MainController extends Controller
 {
@@ -32,6 +33,15 @@ class MainController extends Controller
 
     	// dd($imagenes);
     	return view('galerias.index', ['galerias' => $galerias, 'imagenes' => $imagenes]);
+    }
+
+    public function videos(){
+    	
+        $malla = DB::table('videos')
+                            ->orderBy('orden', 'acs')
+                            ->paginate(4);
+    	// dd($malla);
+    	return view('videos.index', ['malla' => $malla]);
     }
 
     public function categoria($categoria_id){
