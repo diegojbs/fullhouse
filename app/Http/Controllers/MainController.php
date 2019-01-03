@@ -48,10 +48,11 @@ class MainController extends Controller
         // $proyectos = Proyecto::all()->paginate(15);
         $proyectos = DB::table('proyectos')
                             ->join('categorias_proyectos', 'proyectos.id', '=', 'categorias_proyectos.proyecto_id')
+                            ->select('proyectos.*')
                             ->where('categorias_proyectos.categoria_id', $categoria_id)
                             ->orderBy('prioridad_orden', 'asc')
                             ->paginate(15);
-                            // dd($proyectos);
+                            // dd($proyectos->first());
         $detalles = DB::table('detalle_casas')->get();
         $categoria = Categoria::find($categoria_id);
 
