@@ -10,19 +10,23 @@
 		@foreach($malla as $item)
 			{{-- <div class="row"> --}}
 				<div class="col-xs-12 col-md-6">
-					<h3 style="color: orange;">{{$item->titulo}}</h3>
-					<p>{{$item->descripcion}}</p>
-					{{-- <h4>{{$item->url_video}}</h4> --}}
-					<iframe width="100%" 
-						height="315" 
-						src="https://www.youtube.com/embed/{{$item->url_video}}" 
-						frameborder="0" 
-						allow="accelerometer; 
-						autoplay; 
-						encrypted-media; 
-						gyroscope; 
-						picture-in-picture" allowfullscreen>
-					</iframe>
+					<h3 style="color: orange;" class="text-center">{{$item->titulo}}</h3>
+					<div style="background-color:rgba(0,0,0,.2);">
+						<p style="padding:10px;">{{$item->descripcion}}</p>
+						{{-- <h4>{{$item->url_video}}</h4> --}}
+						<div style="padding:10px; background-color:#ff9933; border-radius:0px;">
+							<iframe width="100%" 
+								height="315" 
+								src="https://www.youtube.com/embed/{{$item->url_video}}" 
+								frameborder="0" 
+								allow="accelerometer; 
+								autoplay; 
+								encrypted-media; 
+								gyroscope; 
+								picture-in-picture" allowfullscreen>
+							</iframe>
+						</div>
+					</div>
 					{{-- <div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" 
 							src="{{$item->url_video}}" 
