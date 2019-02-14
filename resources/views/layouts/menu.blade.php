@@ -59,7 +59,7 @@
               </ul>
             </li>
             <li><a href="{{url('/galerias')}}#fotos">Fotos de proyectos</a></li>
-            <li><a href="{{url('/videos')}}#fotos">Vídeos de proyectos</a></li>
+            <li><a href="{{url('/videos')}}#fotos">Videos</a></li>
             <li><a href="{{ asset('/ficha_tecnica') }}">Ficha ténica</a></li>
             <li><a href="{{ asset('/tipos') }}">Tipos de entrega</a></li>
             <li><a href="{{ asset('/oficinas') }}">Oficinas y contactos</a></li>

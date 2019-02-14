@@ -2,7 +2,7 @@
 @section('content')
     
 
-    <div class="encabezado" id="mod_casas"><h2>Videos de proyectos</h2></div>
+    <div class="encabezado" id="mod_casas"><h2>Videos</h2></div>
 	<div class="text-center">{{ $malla->links() }}</div>
 	<!-- lista de modelos -->
 	<div class="container">
