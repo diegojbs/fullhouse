@@ -20,6 +20,8 @@
     </div>
     <!-- fin pie de pagina -->
 
+    <a class='flotante' target="_blank" href='https://wa.me/{{trim($parametros[0]->campo1)}}/?text={{trim($parametros[0]->campo2)}}' ><img width="100%" src='images/logo_wp.png' border="0"/></a>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    
     <!-- Include all compiled plugins (below), or include individual files as needed -->

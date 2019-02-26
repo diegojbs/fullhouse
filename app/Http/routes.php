@@ -56,5 +56,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('admin-detalles-proyectos', 'DetallesCasasAdminController');
 	Route::resource('admin-categorias', 'CategoriasAdminController');
 	Route::resource('admin-videos', 'VideosAdminController');
+	Route::resource('admin-parametros', 'ParametroAdminController');
 });
 

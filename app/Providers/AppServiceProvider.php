@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Categoria;
+use App\Parametro;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,6 +18,10 @@ class AppServiceProvider extends ServiceProvider
         $menu_categorias = Categoria::all();
         session(['menu_categorias' => $menu_categorias ]);
         view()->share('menu_categorias', session('menu_categorias') );
+
+        $parametros = Parametro::all();
+        session(['parametros' => $parametros ]);
+        view()->share('parametros', session('parametros') );
         // dd($menu_categorias);
     }
 

@@ -48,19 +48,32 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
+                    @if (!Auth::guest())
                     <li><a href="{{ url('/admin-proyectos') }}">Proyectos</a></li>
                     <li><a href="{{ url('/admin-categorias') }}">Categorías</a></li>
                     <li><a href="{{ url('/admin-contactos') }}">Contactos</a></li>
                     <li><a href="{{ url('/admin-galerias') }}">Galerías</a></li>
                     <li><a href="{{ url('/admin-tipos-entrega') }}">Tipos entrega</a></li>
                     <li><a href="{{ url('/admin-ficha-tecnica') }}">Fecha técnica</a></li>
-                    <li><a href="{{ url('/admin-oficinas') }}">Oficinas</a></li>
+                    
                     <li>
                         <a href="{{ url('/admin-videos') }}">
                             Vídeos
                             <span class="badge">New</span>
                         </a>
                     </li>
+                    <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Otros <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                {{-- <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li> --}}
+                                <li><a href="{{ url('/admin-oficinas') }}">Oficinas</a></li>
+                                <li><a href="{{ url('/admin-parametros') }}">Parámetros</a></li>
+                            </ul>
+                        </li>
+                    @endif
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -68,7 +81,7 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        {{-- <li><a href="{{ url('/register') }}">Register</a></li> --}}
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

@@ -120,4 +120,21 @@ html, body {
 .enlinea {
   display: inline-block; }
 
+  .flotante {
+    display: scroll;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+  }
+
+  .flotante:hover {
+    display: scroll;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    z-index: 99994;
+  }
+
 /*# sourceMappingURL=app.css.map */
