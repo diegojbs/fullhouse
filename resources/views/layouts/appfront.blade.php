@@ -45,7 +45,7 @@
                 <div class="col-xs-12 col-sm-6 text-left content-tele text-center">
                     {{-- <i class="fa fa-phone fa-2x social" aria-hidden="true"></i> 
                     <i class="fa fa-whatsapp fa-2x social" aria-hidden="true"></i> --}}
-                    <span class="h3 text-center warning">3173314579 - (2) 8350808 - 3183516803</span> 
+                    <span class="h3 text-center warning">{{env('TEL_LINE1')}}</span> 
                 </div>
                 <div class="col-xs-12 col-sm-6 text-right">
                     <span class="h3 text-center">Redes sociales </span> 
