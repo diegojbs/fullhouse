@@ -13,14 +13,14 @@
             <a href="https://www.youtube.com/channel/UCU21ZwYXQ-jmUkty77O5suA" target="_blank"><i class="fa fa-youtube fa-4x social" aria-hidden="true"></i></a>
         </div>
         <div class="col xs-12 col-sm-4 text-center">
-            <b>Oficina principal</b> <br>
-            Calle 13 Norte # 6-101 Barrio Belalcazar <br>
-            Popayán - Cauca - Colombia
+            <b>Oficina principal</b> 
+            <br>{{env('ADD_LINE1')}} <br>
+            {{env('ADD_LINE2')}}
         </div>
     </div>
     <!-- fin pie de pagina -->
 
-    <a class='flotante' target="_blank" href='https://wa.me/{{trim($parametros[0]->campo1)}}/?text={{trim($parametros[0]->campo2)}}' ><img width="100%" src='images/logo_wp.png' border="0"/></a>
+    {{-- <a class='flotante' target="_blank" href='https://wa.me/{{trim($parametros[0]->campo1)}}/?text={{trim($parametros[0]->campo2)}}' ><img width="100%" src='images/logo_wp.png' border="0"/></a> --}}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    
