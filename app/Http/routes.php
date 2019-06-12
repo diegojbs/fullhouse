@@ -23,6 +23,9 @@ Route::get('videos', 'MainController@videos');
 
 Route::get('inicio', 'MainController@index');
 
+//Productos prefabricados
+Route::get('productos-prefabricados', 'MainController@productos');
+
 // Route::get('gracias', 'ContactoController@index');
 
 Route::resource('mail', 'MailController');
@@ -57,5 +60,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('admin-categorias', 'CategoriasAdminController');
 	Route::resource('admin-videos', 'VideosAdminController');
 	Route::resource('admin-parametros', 'ParametroAdminController');
+	Route::resource('admin-productos-prefabricados', 'ProductosAdminController');
 });
 

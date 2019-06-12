@@ -44,6 +44,15 @@ class MainController extends Controller
     	return view('videos.index', ['malla' => $malla]);
     }
 
+    public function productos(){
+    	
+        $malla = DB::table('productos')
+                            ->orderBy('id', 'acs')
+                            ->paginate(8);
+    	// dd($malla);
+    	return view('productos.index', ['malla' => $malla]);
+    }
+
     public function categoria($categoria_id){
         // $proyectos = Proyecto::all()->paginate(15);
         $proyectos = DB::table('proyectos')

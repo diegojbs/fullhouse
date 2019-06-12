@@ -20,7 +20,8 @@
     </div>
     <!-- fin pie de pagina -->
 
-    {{-- <a class='flotante' target="_blank" href='https://wa.me/{{trim($parametros[0]->campo1)}}/?text={{trim($parametros[0]->campo2)}}' ><img width="100%" src='images/logo_wp.png' border="0"/></a> --}}
+    <a class='flotante' target="_blank" href='https://api.whatsapp.com/send?phone={{trim($parametros[0]->campo1)}}/&text={{trim($parametros[0]->campo2)}}' ><img width="100%" src='images/logo_wp.png' border="0"/></a>
+    {{-- https://api.whatsapp.com/send?phone=573103930123&text=Informaci%C3%B3n%20de%20recargas --}}
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    

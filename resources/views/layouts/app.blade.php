@@ -59,7 +59,6 @@
                     <li>
                         <a href="{{ url('/admin-videos') }}">
                             Vídeos
-                            <span class="badge">New</span>
                         </a>
                     </li>
                     <li class="dropdown">
@@ -70,7 +69,18 @@
                             <ul class="dropdown-menu" role="menu">
                                 {{-- <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li> --}}
                                 <li><a href="{{ url('/admin-oficinas') }}">Oficinas</a></li>
-                                {{-- <li><a href="{{ url('/admin-parametros') }}">Parámetros</a></li> --}}
+                                <li>
+                                    <a href="{{ url('/admin-parametros') }}">
+                                        Parámetros
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url('/admin-productos-prefabricados') }}">
+                                        Productos prefabricados
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     @endif
