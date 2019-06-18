@@ -8,5 +8,5 @@ class ProductoPrefabricado extends Model
 {
     protected $table = 'productos';
 
-    protected $fillable = ['nombre', 'descripcion', 'imagen'];
+    protected $fillable = ['nombre', 'prioridad_orden', 'descripcion', 'imagen'];
 }

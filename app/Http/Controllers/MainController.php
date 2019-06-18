@@ -27,7 +27,7 @@ class MainController extends Controller
     public function galerias(){
     	
         $galerias = DB::table('galerias')
-                            ->orderBy('orden', 'acs')
+                            ->orderBy('orden', 'asc')
                             ->paginate(2);
         $imagenes = DB::table('imagenes_galerias')->get();
 
@@ -38,7 +38,7 @@ class MainController extends Controller
     public function videos(){
     	
         $malla = DB::table('videos')
-                            ->orderBy('orden', 'acs')
+                            ->orderBy('orden', 'asc')
                             ->paginate(4);
     	// dd($malla);
     	return view('videos.index', ['malla' => $malla]);
@@ -47,7 +47,7 @@ class MainController extends Controller
     public function productos(){
     	
         $malla = DB::table('productos')
-                            ->orderBy('id', 'acs')
+                            ->orderBy('prioridad_orden', 'asc')
                             ->paginate(8);
     	// dd($malla);
     	return view('productos.index', ['malla' => $malla]);

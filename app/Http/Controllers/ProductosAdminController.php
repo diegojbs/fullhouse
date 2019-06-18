@@ -61,10 +61,11 @@ class ProductosAdminController extends Controller
             if(!$resultado){
                 dd('Error al guardar imagen');
             }else{
-                $data->imagen = $request->imagen;
+                $data->imagen = $nombre_imagen;
             }
 
         $data->nombre = $request->nombre;
+        $data->prioridad_orden = $request->prioridad_orden;
         $data->descripcion = $request->descripcion;
         
         // dd($data);
@@ -137,6 +138,7 @@ class ProductosAdminController extends Controller
         // Fin guardado imagen
 
         $data->nombre = $request->nombre;
+        $data->prioridad_orden = $request->prioridad_orden;
         $data->descripcion = $request->descripcion;
         
 

@@ -5,7 +5,14 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Productos prefabricados</div>
+                <div class="panel-heading">
+                    <div class="row">
+                        <col-xs-12 class="col-md-6">Productos prefabricados</col-xs-12>
+                        <col-xs-12 class="col-md-6 text-right">
+                            <a class="btn btn-warning" href="{{url('/admin-productos-prefabricados')}}">Agregar nuevo</a>
+                        </col-xs-12>
+                    </div>
+                </div>
 
                 <div class="panel-body">
                     <div class="row">
@@ -22,7 +29,9 @@
 
                         {!! Form::label('nombre', 'Nombre') !!}
                         {!! Form::text('nombre',($accion == 'update' ? $ultimo->nombre : null),  ['class'=>'form-control']) !!}
-                        
+
+                        {!! Form::label('prioridad_orden', 'Prioridad orden') !!}
+                        {!! Form::number('prioridad_orden',($accion == 'update' ? $ultimo->prioridad_orden : null),  ['class'=>'form-control']) !!}
                         
                         {!! Form::label('descripcion', 'Descripcion') !!}
                         {!! Form::textarea('descripcion',($accion == 'update' ? $ultimo->descripcion : null),  ['class'=>'form-control summernote']) !!}
@@ -50,6 +59,7 @@
         <table class="table table-striped">
             <thead>
                 <th>Nombre</th>
+                <th>Prioridad orden</th>
                 <th>Descripcion</th>
                 <th>Imagen</th>
                 <th>Editar</th>
@@ -59,6 +69,7 @@
                 @foreach($malla as $registro)
                     <tr>
                         <td>{{$registro->nombre}}</td>
+                        <td>{{$registro->prioridad_orden}}</td>
                         <td>{!!$registro->descripcion!!}</td>
                         <td>
                             @if($registro->imagen)
